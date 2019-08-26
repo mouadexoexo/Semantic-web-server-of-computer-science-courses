@@ -1,0 +1,1078 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#"
+     xml:base="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:professor="http://www.semanticweb.org/dear-joe/ontologies/2019/5/professor#">
+    <owl:Ontology rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI">
+        <owl:versionIRI rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Appartient -->
+
+    <owl:ObjectProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Appartient">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Filiere"/>
+        <rdfs:range rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Cursus"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Enseigne -->
+
+    <owl:ObjectProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Enseigne">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Enseignant"/>
+        <rdfs:range rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Matiere"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Enseigner_A -->
+
+    <owl:ObjectProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Enseigner_A">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Matiere"/>
+        <rdfs:range rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Seance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Equipe_De -->
+
+    <owl:ObjectProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Equipe_De">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle"/>
+        <rdfs:range rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Materiel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#F_Compose_De -->
+
+    <owl:ObjectProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#F_Compose_De">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Filiere"/>
+        <rdfs:range rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Matiere"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Inscrit_Dans -->
+
+    <owl:ObjectProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Inscrit_Dans">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Etudiant"/>
+        <rdfs:range rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Filiere"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Reserver_A -->
+
+    <owl:ObjectProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Reserver_A">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Seance"/>
+        <rdfs:range rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Responsable_De -->
+
+    <owl:ObjectProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Responsable_De">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Responsable"/>
+        <rdfs:range rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Filiere"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#adresse -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#adresse">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#apogee -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#apogee">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Etudiant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#c_Filiere -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#c_Filiere">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Filiere"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#c_cursus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#c_cursus">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Cursus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#c_materiel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#c_materiel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Materiel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#c_matiere -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#c_matiere">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Matiere"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#c_salle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#c_salle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#c_seance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#c_seance">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Seance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#cin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#cin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#cne -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#cne">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Etudiant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#departement -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#departement">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#email">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#h_debut -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#h_debut">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Seance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#h_fin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#h_fin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Seance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#id_filiere -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#id_filiere">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Filiere"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#id_materiel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#id_materiel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Materiel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#id_matiere -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#id_matiere">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Matiere"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#id_salle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#id_salle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#id_seance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#id_seance">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Seance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#jour -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#jour">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Seance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#libelle_cursus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#libelle_cursus">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Cursus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#libelle_filiere -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#libelle_filiere">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Filiere"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#libelle_materiel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#libelle_materiel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Materiel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#libelle_matiere -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#libelle_matiere">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Matiere"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#nom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#nom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#password -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#password">
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Enseignant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#prenom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#prenom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#sexe -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#sexe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#tel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#tel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#type_salle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#type_salle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#type_seance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#type_seance">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Seance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:domain rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Personne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Cursus -->
+
+    <owl:Class rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Cursus"/>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Enseignant -->
+
+    <owl:Class rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Enseignant">
+        <rdfs:subClassOf rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Etudiant -->
+
+    <owl:Class rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Etudiant">
+        <rdfs:subClassOf rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Filiere -->
+
+    <owl:Class rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Filiere"/>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Materiel -->
+
+    <owl:Class rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Materiel"/>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Matiere -->
+
+    <owl:Class rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Matiere"/>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Personne -->
+
+    <owl:Class rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Personne"/>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Responsable -->
+
+    <owl:Class rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Responsable">
+        <rdfs:subClassOf rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Personne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle -->
+
+    <owl:Class rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle"/>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Seance -->
+
+    <owl:Class rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Seance"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Cursus1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Cursus1">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Cursus"/>
+        <libelle_cursus>Master</libelle_cursus>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Filiere1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Filiere1">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Filiere"/>
+        <Appartient rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Cursus1"/>
+        <F_Compose_De rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#matiere1"/>
+        <c_Filiere>BG &amp; CC</c_Filiere>
+        <id_filiere rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">001</id_filiere>
+        <libelle_filiere>Big Data and Cloud computing</libelle_filiere>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Materiel1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Materiel1">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Materiel"/>
+        <c_materiel>M001</c_materiel>
+        <id_materiel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">001</id_materiel>
+        <libelle_materiel>Projecteur</libelle_materiel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Materiel2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Materiel2">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Materiel"/>
+        <c_materiel>M002</c_materiel>
+        <id_materiel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">002</id_materiel>
+        <libelle_materiel>PCs</libelle_materiel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Responsable1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Responsable1">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Responsable"/>
+        <Responsable_De rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Filiere1"/>
+        <adresse>nfjkhdsjfhsd</adresse>
+        <cin>f9876543</cin>
+        <departement>Informatique</departement>
+        <email>Tkatek_said@gmail.com</email>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">007</id>
+        <nom>TKATEK</nom>
+        <prenom>SAID</prenom>
+        <sexe>masculin</sexe>
+        <tel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">065874321</tel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle1">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle"/>
+        <Equipe_De rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Materiel1"/>
+        <c_salle>SI01</c_salle>
+        <id_salle rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">001</id_salle>
+        <type_salle>Cour</type_salle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle2">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle"/>
+        <Equipe_De rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Materiel2"/>
+        <c_salle>SI02</c_salle>
+        <id_salle rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">002</id_salle>
+        <type_salle>TP</type_salle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#enseignant1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#enseignant1">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Enseignant"/>
+        <Enseigne rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#matiere1"/>
+        <adresse>kesh</adresse>
+        <cin>XXXXXX</cin>
+        <departement>Informatique</departement>
+        <email>moumen@gmail.com</email>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">001</id>
+        <nom>MOUMEN</nom>
+        <password rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1111</password>
+        <prenom>Idriss</prenom>
+        <sexe>M</sexe>
+        <tel>06XXXXXXXX</tel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#enseignant2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#enseignant2">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Enseignant"/>
+        <Enseigne rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#matiere2"/>
+        <adresse>test adrejgdjshdkd</adresse>
+        <cin>G457812</cin>
+        <departement>Mathematique</departement>
+        <email>fahmi@gmail.com</email>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">002</id>
+        <nom>FAHMI</nom>
+        <password rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2222</password>
+        <prenom>Hind</prenom>
+        <sexe>F</sexe>
+        <tel>06YYYYYYYY</tel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#enseignant3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#enseignant3">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Enseignant"/>
+        <Enseigne rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#matiere3"/>
+        <adresse>hgfkjhieruyer</adresse>
+        <cin>G64358</cin>
+        <departement>Informatique</departement>
+        <email>rabot@gmail.com</email>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">003</id>
+        <nom>RABOT</nom>
+        <password rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3333</password>
+        <prenom>Mark</prenom>
+        <sexe>M</sexe>
+        <tel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0698743226</tel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#enseignant4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#enseignant4">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Enseignant"/>
+        <Enseigne rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#matiere4"/>
+        <adresse>hfjdetrtgvhi</adresse>
+        <cin>F876543</cin>
+        <departement>Informatique</departement>
+        <email>haitam@gmail.com</email>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">004</id>
+        <nom>HAIYTAM</nom>
+        <password rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4444</password>
+        <prenom>haitam</prenom>
+        <sexe>M</sexe>
+        <tel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0698743218</tel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#enseignant5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#enseignant5">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Enseignant"/>
+        <Enseigne rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#matiere5"/>
+        <adresse>gfhviyukbj</adresse>
+        <cin>D876543</cin>
+        <departement>Informatiqe</departement>
+        <email>hsaini@gmail.com</email>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">005</id>
+        <nom>HSAINI</nom>
+        <password rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5555</password>
+        <prenom>SARA</prenom>
+        <sexe>F</sexe>
+        <tel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">06548907321</tel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#enseignant6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#enseignant6">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Enseignant"/>
+        <Enseigne rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#matiere6"/>
+        <adresse>ghgjhijkljk</adresse>
+        <cin>H976544</cin>
+        <departement>Informatique</departement>
+        <email>choukri@gmail.com</email>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">006</id>
+        <nom>CHOUKRI</nom>
+        <password rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6666</password>
+        <prenom>Ali</prenom>
+        <sexe>M</sexe>
+        <tel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0654398732</tel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#etudiant1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#etudiant1">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Etudiant"/>
+        <Inscrit_Dans rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Filiere1"/>
+        <adresse>Lotissement Wafaa 2 N 420</adresse>
+        <apogee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2134655124154</apogee>
+        <cin>G546096</cin>
+        <cne rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1129606582</cne>
+        <departement>Informatique</departement>
+        <email>youssef.azizi@uit.ac.ma</email>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">001</id>
+        <nom>AZIZI</nom>
+        <prenom>Youssef</prenom>
+        <sexe>M</sexe>
+        <tel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0682300374</tel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#etudiant2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#etudiant2">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Etudiant"/>
+        <Inscrit_Dans rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Filiere1"/>
+        <adresse>hay alawafa gp33</adresse>
+        <apogee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12354678944</apogee>
+        <cin>H34576</cin>
+        <cne rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1256943206</cne>
+        <departement>Informatique</departement>
+        <email>Awatif_ezzourgami@gmail.com</email>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">002</id>
+        <nom>EZZOURGAMI</nom>
+        <prenom>AWATIF</prenom>
+        <sexe>F</sexe>
+        <tel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0657483982</tel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#etudiant3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#etudiant3">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Etudiant"/>
+        <Inscrit_Dans rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Filiere1"/>
+        <adresse>hay el wifa9 gp44</adresse>
+        <apogee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200765</apogee>
+        <cin>K976533</cin>
+        <cne rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">127653489</cne>
+        <departement>Informatique</departement>
+        <email>BenALI_Mouad@gmail.com</email>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">003</id>
+        <nom>BENALI</nom>
+        <prenom>Mouad</prenom>
+        <sexe>M</sexe>
+        <tel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">065732198</tel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#etudiant4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#etudiant4">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Etudiant"/>
+        <Inscrit_Dans rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Filiere1"/>
+        <adresse>hay lwahda gh12</adresse>
+        <apogee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128765439</apogee>
+        <cin>G34879</cin>
+        <cne rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1298764390</cne>
+        <departement>Informatique</departement>
+        <email>TAHIRI_SARA@gmail.com</email>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">004</id>
+        <nom>TAHIRI</nom>
+        <prenom>Sara</prenom>
+        <sexe>F</sexe>
+        <tel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">06876544337</tel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#etudiant5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#etudiant5">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Etudiant"/>
+        <Inscrit_Dans rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Filiere1"/>
+        <adresse>hay el wijdan gp16</adresse>
+        <apogee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">129887654</apogee>
+        <cin>J987656</cin>
+        <cne rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120987654</cne>
+        <departement>Informatique</departement>
+        <email>HIJRI_Abdelkodouss@gmail.com</email>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">005</id>
+        <nom>HIJRI</nom>
+        <prenom>abd elkodouss</prenom>
+        <sexe>M</sexe>
+        <tel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0675439865</tel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#matiere1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#matiere1">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Matiere"/>
+        <Enseigner_A rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance1"/>
+        <Enseigner_A rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance9"/>
+        <c_matiere>Data mining</c_matiere>
+        <id_matiere rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">001</id_matiere>
+        <libelle_matiere>Data mining</libelle_matiere>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#matiere2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#matiere2">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Matiere"/>
+        <Enseigner_A rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance10"/>
+        <Enseigner_A rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance2"/>
+        <c_matiere>Statestique dans R</c_matiere>
+        <id_matiere rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">002</id_matiere>
+        <libelle_matiere>Statistique</libelle_matiere>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#matiere3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#matiere3">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Matiere"/>
+        <Enseigner_A rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance3"/>
+        <c_matiere>anglais</c_matiere>
+        <id_matiere rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">003</id_matiere>
+        <libelle_matiere>anglais</libelle_matiere>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#matiere4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#matiere4">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Matiere"/>
+        <Enseigner_A rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance4"/>
+        <Enseigner_A rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance8"/>
+        <c_matiere>Intelligence Artificielle</c_matiere>
+        <id_matiere rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">004</id_matiere>
+        <libelle_matiere>AI</libelle_matiere>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#matiere5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#matiere5">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Matiere"/>
+        <Enseigner_A rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance11"/>
+        <Enseigner_A rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance5"/>
+        <c_matiere>BD</c_matiere>
+        <id_matiere rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">005</id_matiere>
+        <libelle_matiere>Big Data</libelle_matiere>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#matiere6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#matiere6">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Matiere"/>
+        <Enseigner_A rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance6"/>
+        <Enseigner_A rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance7"/>
+        <c_matiere>Web Semantique</c_matiere>
+        <id_matiere rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">006</id_matiere>
+        <libelle_matiere>WS</libelle_matiere>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance1">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Seance"/>
+        <Reserver_A rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle1"/>
+        <c_seance>SE01</c_seance>
+        <h_debut>12:30</h_debut>
+        <h_fin>10:30</h_fin>
+        <id_seance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">001</id_seance>
+        <jour rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lundi</jour>
+        <type_seance>Cour</type_seance>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance10">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Seance"/>
+        <Reserver_A rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle1"/>
+        <c_seance>SE010</c_seance>
+        <h_debut>14:30</h_debut>
+        <h_fin>16:30</h_fin>
+        <id_seance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">010</id_seance>
+        <jour>Vendredi</jour>
+        <type_seance>TD</type_seance>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance11">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Seance"/>
+        <Reserver_A rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle2"/>
+        <c_seance>SE011</c_seance>
+        <h_debut>10:30</h_debut>
+        <h_fin>12:30</h_fin>
+        <id_seance>O11</id_seance>
+        <jour>Samedi</jour>
+        <type_seance>TP</type_seance>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance2">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Seance"/>
+        <Reserver_A rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle1"/>
+        <c_seance>SE02</c_seance>
+        <h_debut>10:30</h_debut>
+        <h_fin>12:30</h_fin>
+        <id_seance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">002</id_seance>
+        <jour rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mardi</jour>
+        <type_seance>cour</type_seance>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance3">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Seance"/>
+        <Reserver_A rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle1"/>
+        <c_seance>SE03</c_seance>
+        <h_debut>10:30</h_debut>
+        <h_fin>12:30</h_fin>
+        <id_seance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">003</id_seance>
+        <jour>Mercredi</jour>
+        <type_seance>Cour</type_seance>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance4">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Seance"/>
+        <Reserver_A rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle1"/>
+        <c_seance>SE04</c_seance>
+        <h_debut>14:30</h_debut>
+        <h_fin>16:30</h_fin>
+        <id_seance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">004</id_seance>
+        <jour>Mercredi</jour>
+        <type_seance>Cour</type_seance>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance5">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Seance"/>
+        <Reserver_A rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle1"/>
+        <c_seance>SE05</c_seance>
+        <h_debut>10:30</h_debut>
+        <h_fin>12:30</h_fin>
+        <id_seance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">005</id_seance>
+        <jour>Jeudi</jour>
+        <type_seance>Cour</type_seance>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance6">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Seance"/>
+        <Reserver_A rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle1"/>
+        <c_seance>SE06</c_seance>
+        <h_debut>10:30</h_debut>
+        <h_fin>12:30</h_fin>
+        <id_seance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">006</id_seance>
+        <jour>Vendredi</jour>
+        <type_seance>Cour</type_seance>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance7">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Seance"/>
+        <Reserver_A rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle2"/>
+        <c_seance>SE07</c_seance>
+        <h_debut>14:30</h_debut>
+        <h_fin>16:30</h_fin>
+        <id_seance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">007</id_seance>
+        <jour>Lundi</jour>
+        <type_seance>TP</type_seance>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance8">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Seance"/>
+        <Reserver_A rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle2"/>
+        <c_seance>SE08</c_seance>
+        <h_debut>14:30</h_debut>
+        <h_fin>16:30</h_fin>
+        <id_seance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">008</id_seance>
+        <jour>Mardi</jour>
+        <type_seance>TP</type_seance>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#seance9">
+        <rdf:type rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Seance"/>
+        <Reserver_A rdf:resource="http://www.fs.uit.ac.ma/ontologies/2019/UIT/DI#Salle2"/>
+        <c_seance>SE09</c_seance>
+        <h_debut>14:30</h_debut>
+        <h_fin>16:30</h_fin>
+        <id_seance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">009</id_seance>
+        <jour>Jeudi</jour>
+        <type_seance>TP</type_seance>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
